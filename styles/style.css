@@ -1,0 +1,286 @@
+/* ----------------------------
+Navigation Bar Styles
+------------------------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+}
+nav h2{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+p{
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/*--------------------------------------------
+ First section with button and main camera image
+------------------------------------------------ */
+
+.first-section{
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.first-section-contents H1{
+    font-size: 52px;
+    font-family:  'Roboto', sans-serif;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.link-button{
+    text-decoration: none;
+    width: 196px;
+    height: 44px;
+    cursor: pointer;
+    border: none;
+    background:#971746;
+    border-radius: 41px;
+    font-family:  'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+    padding: 10px 24px;
+}
+.link-button:hover{
+background-color: #e0427c;
+}
+
+.first-section-img img{
+    width: 440px;
+    height: 414px;
+}
+
+/* -----------------------
+Different logo section
+-------------------------- */
+.second-section{
+    border-top:1px solid #D1D1D1;
+    border-bottom: 1px solid #D1D1D1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.second-section img{
+    padding: 20px;
+
+}
+
+/* --------------------------------------------------
+Third section of different popular collections
+--------------------------------------------------- */
+.third-section{
+    width: 1047px;
+    margin-left: 140px;
+    margin-bottom: 10px;
+}
+.third-section-frame{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.third-section-title {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.collection{
+width: 329px;
+height: 476;
+background: #FFFFFF;
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+border-radius: 5px;
+}
+
+.collection img{
+width: 100%;
+margin-top: 10px;
+margin-right: 10px;
+margin-left: 10px;
+width: 300px;
+height: 256px;
+}
+
+.collection h3{
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    margin-left:10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.collection h4{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    margin-left:10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.collection-stars
+{
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.collection-stars p{
+font-size: 14px;
+}
+.fa-star{
+    font-size: 14px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+
+.fa-star.empty{
+    color: #AEAEAE;
+}
+
+.third-section-bottom{
+    font-size: 16px;
+    color: #e0427c;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+    text-align: right;
+}
+
+.direct{
+    font: 16px;
+    color: #e0427c;
+    margin-top: 20px;
+    margin-right: 150px;
+    text-align: right;
+}
+
+/* -------------------------------------------
+Section:04 I have added a blog section
+----------------------------------------- */
+.fourth-section{
+    display: flex;
+}
+
+.fourth-section-img{
+    margin-left: 120px;
+    padding: 5px;
+}
+
+.fourth-section-content{
+    margin-left: 10px;
+    margin-right: 120px;
+    padding: 5px;
+}
+
+.fourth-section-content h3{
+    font-size: 28px;
+    color: #b33e69;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+}
+
+.fourth-section-content p{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* -------------------------------------------------
+Footer Section Deesign
+-------------------------------------------------- */
+footer{
+    background-color: rgb(40, 49, 77);
+}
+footer h5{
+    font-size: 22px;
+    padding: 5px;
+    margin-bottom: 0px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+footer p{
+    font-size: 16px;
+    padding: 5px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/* -----------------------
+Social Icons Design
+-------------------------- */
+.foot {
+    padding: 10px;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+  }
+
+/*--------------------------------------
+ Mobile & Tablet Responsiveness
+------------------------------------- */
+
+/* Mobile Devices */
+@media only screen and (max-width:667px){
+    .first-section .second-section .third-section .fourth-section{
+        width: 100%;
+}
+    .first-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .second-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .third-section-frame{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .fourth-section {
+        flex-direction: column;
+    }
+}
+
+/* Ipad Devices */
+@media only screen and (max-width:1180px){
+    .first-section .second-section .third-section .fourth-section{
+        width: 100%;
+}
+    .first-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .second-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .third-section-frame{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fourth-section {
+        flex-direction: column;
+    }
+}
